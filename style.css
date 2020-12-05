@@ -41,7 +41,7 @@ h1{
   line-height: 1.5em;
   font-size: 40px;
   letter-spacing: -.2px;
-  color:white
+  color:white;
 }
 h2{
   color:#1b2127;
@@ -99,7 +99,7 @@ figure{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color:#485ACD;
+  background-color:#E50914;
   color: white;
   height: 70px;
 }
@@ -110,13 +110,14 @@ figure{
 .footer{
   display: flex;
   color: white;
-  background-color: #485ACD;
+  background-color: #E50914;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .event-title{
   margin-left: 20px;
+  color: white;
 }
 .event-list{
   display: flex;
@@ -129,7 +130,6 @@ figure{
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #f4fbff;
 }
 .event img{
   width: 480px;
@@ -142,7 +142,7 @@ figure{
   background-color: white;
   position: relative;
   padding: 20px;
-  border: #6D6F7A 5px solid;
+  border: #111111 5px solid;
   border-radius: 20px;
   text-align: center;
 }
@@ -155,6 +155,7 @@ figure{
   padding: 5px 20px;
   text-decoration: none;
   color: black;
+  
   border-radius: 5px;
 }
 .footer a{
@@ -190,32 +191,56 @@ figure{
   color: white;
 }
 
-/* For 1024px */  
-@media screen and (max-width: 1024px) {  
-  .container{
-    padding: 15px;
+
+/* Changes for screen */
+
+/*For a screen of 1024px*/
+@media (max-width: 1024px) {
+    .container{
+      padding: 1px;
+    }
+    .event-title{
+      margin: 15px;
+    }
+    .event-detail h3{
+      font-size: 20px;
+    }
+    .event-detail p{
+      font-size: 18px;
+    }
+    .logo img{
+      height: 40px;
+      vertical-align: middle;
+    }
+    .event-detail p {
+      font-size: 19px;
+    }
   }
-  .event-title{
-    margin: 15px;
-  }
-  .event-detail h3{
-    font-size: 20px;
-  }
-  .event-detail p{
-    font-size: 18px;
-  }
-  .logo img{
-    height: 40px;
-    vertical-align: middle;
-  }
+
+/*For a screen of 768px*/
+@media (max-width: 768px) {
+      .container {
+          padding: 1px;
+      }
+      figure {
+        margin: 1;
+      }
+      .event img {
+        width: auto;
+        height: 210px;
+        object-fit: cover;
+      }
+      .event p {
+        text-align: center;
+    }
+
+    .menu ul {
+      height: -webkit-fill-available;
+      margin: -10px;
+      padding: 1px;
+      display: flex;
+      list-style: none;
+    }
 }
 
-/* For 768px */  
-@media screen and (max-width: 768px) {  
-      
-}  
 
-/* For 480px */  
-@media screen and (max-width: 480px) {  
-      
-}  

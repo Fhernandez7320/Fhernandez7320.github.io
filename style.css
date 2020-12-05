@@ -84,6 +84,10 @@ figure{
   display: flex;
   list-style: none;
 }
+
+.More {
+    color: black;
+}
 .menu ul li{
   margin: 0 20px;
   height: inherit;
@@ -150,7 +154,7 @@ figure{
   border: 1px solid;
   padding: 5px 20px;
   text-decoration: none;
-  color: #026fff;
+  color: black;
   border-radius: 5px;
 }
 .footer a{
